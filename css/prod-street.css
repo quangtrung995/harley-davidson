@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+.card-container .card-body p {margin-bottom: 0;}
+.card-container .card {
+	border-radius: 0;
+	background-color: inherit;
+	border: none;
+}
+.card-container .card-link {display: block}
+.card-container .card-img {height: 220px;background-color: white;}
+
+.card-container .heart {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: red;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	background: transparent;
+	display: none;
+}
+.card-container:hover .card-body::before {
+	height: 100%;
+	transition: height 200ms ease-out; 
+}
+.card-container .card-body::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	background-color: white;
+	width: 100%;
+	height: 0%;
+	transition: height 225ms ease-out 275ms;
+}
+.card-container .letter-spacing {letter-spacing: 1px;}
+
+.card-container .bike-color-block {
+	position: absolute;
+	top: 0;
+	font-size: 14px; 
+	display: block;
+	opacity: 1;
+	transition: opacity 100ms 230ms;}
+.card-container:hover .bike-color-block {
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 100ms 100ms;}
+
+.card-container .color-select {
+	display: block;
+	opacity: 0;
+	transition: opacity 100ms 200ms
+}
+.card-container:hover .color-select {
+	opacity: 1;
+	transition: opacity 100ms 200ms;
+}
+
+.card-container .color-item {display: inline-block;}
+.card-container .color-item div {width: 20px;height: 20px;border: 1px transparent solid;border-radius: 50%;background-color: black;margin-right: 10px}
+.card-container .color-item:hover div {border: 3px #FA6600 solid;}
+
+
+.card-container .card-footer {background-color: inherit; border: none;}
+
+.card-container .color-detail-ul {display: block;}
+.card-container .color-detail-item {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+}
+
+
+

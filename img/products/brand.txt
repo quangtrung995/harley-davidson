@@ -1,0 +1,18 @@
+STREET
++forty-eight
++roadster
++Iron 1200
++Iron 883
+
+CRUISER
++Fat Bob
++Fat Boy
++Street Bob
+
+TOURING
++Road king
++CVO Street Glide
++Heritage Classic
+
+
+

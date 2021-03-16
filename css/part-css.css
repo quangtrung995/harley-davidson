@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.card-hover {
+	border: none;
+	background-color: transparent;
+}
+.card-hover:hover {box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5)}
+
+.rating {color: #FA6600;}
+
+.bg-card-part {background-color: #C4C4C4;}
+
+.part-tab .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+	color: black;
+	background-color: #FA6600;
+	border-color: transparent;
+}

@@ -1,0 +1,20 @@
+Secondary-Font-Bold", 
+"NotoSans-Bold", 
+sans-serif
+
+
+
+
+
+Toko Font
+
+Main Color:
+#fa6600 (Cam)
+
+
+Cọ spray 5
+size 200
+opa 39%
+color #000000
+background: #666666
+

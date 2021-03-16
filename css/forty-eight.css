@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.slick-slider-center .item {width: 370px; margin: 0 50px;
+}
+.spacing {letter-spacing: 2px;}
+
+.color-opts {margin-right: 20px; display: block;}
+.color-opts .color-item {display: inline-block;	margin-left: 15px;}
+.color-opts .color-item div {
+	width: 26px;
+	height: 26px;
+	border: 1px transparent solid;
+	border-radius: 50%;
+	background-color: black;
+}
+.color-opts .color-item:hover div {border: 2px #FA6600 solid;}
+
+.no-ml {margin-left: 0!important}
+
+.middle-line {width: 1px;height: 100%;background-color: grey;}
+
+.prices {margin-right: 20px;}
+
+.slick-prev::before, .slick-next::before {font-size: 30px;}

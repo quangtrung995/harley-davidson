@@ -1,0 +1,537 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*576px 768px 992px 1200px*/
+
+@font-face{
+	font-family: notosan-r;
+	src: url("../fonts/NotoSans-Regular.ttf")
+}
+@font-face{
+	font-family: notosan-b;
+	src: url("../fonts/NotoSans-Bold.ttf")
+}
+@font-face{
+	font-family: notosan-i;
+	src: url("../fonts/NotoSans-Italic.ttf")
+}
+@font-face{
+	font-family: notosan-bi;
+	src: url("../fonts/NotoSans-BoldItalic.ttf")
+}
+body{
+	font-weight: 100;
+	font-family: notosan-r;
+	color: #000000;
+	background-color: #E0E0E0;
+}
+.font-noto-bi-42 {font-family: notosan-bi;font-size: 2.625rem;}
+.font-noto-b-42 {font-family: notosan-b;font-size: 2.625rem;}
+
+.font-noto-b-36 {font-family: notosan-b;color: white;font-size: 2.25rem;}
+.font-noto-bi-36{font-family: notosan-bi; color: white; font-size: 2.25rem;}
+
+.font-noto-b-24{font-family: notosan-b;color: white;font-size: 1.5rem;}
+.font-noto-bi-24{font-family: notosan-bi;color: white;font-size: 1.5rem;}
+
+.font-noto-b-16{font-family: notosan-b;color: white;font-size: 1rem;}
+.font-noto-bi-16{font-family: notosan-bi;color: white;font-size: 1rem;}
+
+.font-noto-r-16{font-family: notosan-r;color: white;font-size: 1rem;}
+
+.main-color{color: #FA6600!important}
+.text-black {color: black;}
+
+
+@media (max-width: 576px) {
+	.font-noto-bi-42 {font-family: notosan-bi;font-size: 1rem;}
+	.font-noto-b-42 {font-family: notosan-b;font-size: 1rem;}
+
+	.font-noto-b-36 {font-family: notosan-b;font-size: 1rem;}
+	.font-noto-bi-36{font-family: notosan-bi;font-size: 1rem;}
+
+	.font-noto-b-24{font-family: notosan-b;font-size: 1rem;}
+	.font-noto-bi-24{font-family: notosan-bi;font-size: 1rem;}
+
+	.font-noto-b-16{font-family: notosan-b;font-size: 0.9rem;}
+	.font-noto-bi-16{font-familyfont-size: 0.9rem;}
+	
+	.font-noto-r-16{font-size: 0.9rem}
+}
+@media (max-width: 768px) {
+	.font-noto-bi-42 {font-family: notosan-bi;font-size: 1rem;}
+	.font-noto-b-42 {font-family: notosan-b;font-size: 1rem;}
+
+	.font-noto-b-36 {font-family: notosan-b;font-size: 1rem;}
+	.font-noto-bi-36{font-family: notosan-bi; cfont-size: 1rem;}
+
+	.font-noto-b-24{font-family: notosan-b;font-size: 1rem;}
+	.font-noto-bi-24{font-family: notosan-bi;font-size: 1rem;}
+
+	.font-noto-b-16{font-family: notosan-b;font-size: 0.9rem;}
+	.font-noto-bi-16{font-family: notosan-bi;font-size: 0.9rem;}
+	
+	.font-noto-r-16{font-size: 0.9rem}
+}
+@media (max-width: 992px) {
+	.font-noto-bi-42 {font-family: notosan-bi;font-size: 1rem;}
+	.font-noto-b-42 {font-family: notosan-b;font-size: 1rem;}
+
+	.font-noto-b-36 {font-family: notosan-b;font-size: 1rem;}
+	.font-noto-bi-36{font-family: notosan-bi; cfont-size: 1rem;}
+
+	.font-noto-b-24{font-family: notosan-b;font-size: 1rem;}
+	.font-noto-bi-24{font-family: notosan-bi;font-size: 1rem;}
+
+	.font-noto-b-16{font-family: notosan-b;font-size: 0.9rem;}
+	.font-noto-bi-16{font-family: notosan-bi;font-size: 0.9rem;}
+	
+	.font-noto-r-16{font-size: 0.9rem}
+}
+		/*CSS CONTENT*/
+
+/*BTN-DEFAULT*/
+.btn-disable{text-decoration: none!important;}
+.btn-disable:hover{color: white;}
+
+.bg-btn {
+	background-image: url("../img/bg/bg-signup.png");
+	background-position: right center;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.bg-btn span {
+	display: block;
+	padding: 15px 30px 15px 30px;
+	transition: padding 0.5s ease-in-out;
+	position: relative;
+}
+.bg-btn span i {
+	position: absolute;
+	right: 20%;
+	font-size: 17px;
+	opacity: 0;
+	transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.bg-btn:hover span {padding-left: 15px;padding-right: 45px;}
+
+.bg-btn:hover span i {right: 10%;opacity: 1;}
+/*BTN-DEFAULT*/
+
+		/*CART*/
+#shoppicart a {color: #000000;}
+#shoppicart .cart {width: 40px;height: 40px;text-align: center;margin: 0 10px;}
+#shoppicart .cart i {font-size: 20px;line-height: 40px;}
+#shoppicart .highli {background-color: #fa6600;}
+#shoppicart .cart:hover a {color:#fa6600 }
+#shoppicart .highli:hover a {color: white;}
+
+.offcanvas-active{overflow:hidden;}
+
+.screen-overlay {
+  width:0%;
+  height: 100%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity:0;
+  visibility:hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition:opacity .2s linear, visibility .1s, width 1s ease-in;
+   }
+.screen-overlay.show {
+    transition:opacity .5s ease, width 0s;
+    opacity:1;
+    width:100%;
+    visibility:visible;
+}
+
+.offcanvas{
+	width:350px;
+	padding-left: 10px;
+	padding-right: 10px;
+	visibility: hidden;
+	transform:translateX(-100%);
+	transition:all .2s;
+	border-radius:0; 
+	box-shadow: 0 5px 10px rgba(0,0,0, .2);
+	display:block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 1200;
+	background-color: #fff;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.offcanvas.offcanvas-right {
+   right: 0;
+   left: auto;
+   transform: translateX(100%); 
+ }
+
+.offcanvas.show{
+	visibility: visible;
+    transform: translateX(0);
+    transition: transform .2s;
+}
+
+.offcanvas .btn-close{position: absolute;right:15px;top:15px; }
+
+.logo-overlay {}
+		/*END of CART*/
+		/*MENU*/
+#menu .size-img {max-width: 120px;}
+#menu ul{font-family: notosan-b;}
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus
+{
+	color: #fa6600;
+}
+		/*MENU*/
+
+/*DROPDOWN MENU*/
+.override-dropdown {min-width: 40rem;left: -200px;height: 180px;}
+
+.override-dropdown li {max-width: 200px;height: 40px;background-color: white;}
+
+.dropdown-item:hover, .dropdown-item:focus {background-color: transparent!important;}
+
+@media only screen and (max-width: 576px) {
+	.override-dropdown {
+		height: 135px;
+		min-width: 16rem; 
+	}
+}
+@media only screen and (max-width: 768px) {
+	.override-dropdown {
+		height: 135px;
+		min-width: 16rem; 
+	}
+}
+@media only screen and (max-width: 992px) {
+	.override-dropdown {
+		height: 135px;
+		min-width: 16rem; 
+	}
+}
+/*DROPDOWN MENU*/
+
+/*BANNER*/
+.cap1 {top: 15%;bottom: 15%;right: 15%;left: 15%;text-align: left;}
+
+.square {width: 60%;height: 80%;border: 2px #FA6600 solid;}
+
+.bann-cont img {width: 30%;}
+
+.carousel-indicators .active {background-color: #FA6600;}
+.carousel-indicators li, .carousel-control-prev, .carousel-control-next {opacity: 1;}
+
+.cap-left{margin-left: auto;margin-right: 0;}
+
+@media (max-width: 576px) {
+	.square {border: none; width: 100%;height: 100%}
+	
+	.bann-cont img {display: none;}
+	.bann-cont h2 {font-size: 1rem;}
+	.bann-cont h3 {font-size: 0.5rem;margin-bottom: 0;}
+	.bann-cont .w-100 {display: none;}
+	
+}
+/*BANNER*/
+
+/*DÒNGXE*/
+
+.bg-dongxe {background-image: url("../img/bg/tab-bg.png");}
+
+.w-33 {width: 33.33%;padding-right: 10px;margin-bottom: 30px;}
+
+#dongxe .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+	background-color: transparent;
+	color: #FA6600;
+	border-color: transparent;
+}
+
+#dongxe .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+	border-color: transparent;
+	color: #FA6600;
+}
+
+#dongxe .nav-tabs {border-bottom: none;}
+
+#dongxe .line {border-bottom: 2px transparent solid;}
+#dongxe .nav-item:hover .line {border-bottom: 2px #FA6600 solid;}
+
+#dongxe a {color: white;}
+
+@media (max-width: 576px) {
+	#dongxe	.font-noto-bi-24 h2 {font-size: 1.25rem;}
+	.line-decor {width: 10%;}
+	#dongxe .font-noto-b-16 a {font-size: 1rem;}
+}
+/*DÒNGXE*/
+/*PHỤ TÙNG*/
+
+.phutung-conte
+{
+	padding: 10px;
+}
+.phutung-conte p, .phutung-conte h3, .phutung-conte span{
+	margin: 0;
+	padding: 0;
+}
+.phutung-conte p {
+	color: #FA6600;
+	font-family: notosan-bi;
+	font-size: 16px;
+}
+.phutung-conte h3 {color: black;}
+.phutung-conte span {
+	font-family: notosan-i;
+	color: #828282;
+}
+
+.scrolling-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+.card-part {flex: 0 0 auto;}
+@media (max-width: 576px) {
+	#phutung .font-noto-bi-24 h2 {font-size: 1.25rem;}
+	#phutung .font-noto-bi-24 img {width: 10%;}
+	
+	.phutung-conte .font-noto-bi-24 {font-size: 1rem;}
+}
+
+/*PHỤ TÙNG*/
+
+/*MAGAZINE*/
+
+.magazine {margin: auto 0;}
+
+/*MAGAZINE*/
+
+/*EVENT*/
+.style-comin {}
+.style-comin h1 {
+	font-size: 150px;
+	font-family: notosan-bi;
+	color: #4F4F4F;
+	position: absolute;
+	bottom: -76px;
+}
+
+.bg-black {background-color: black;}
+
+.event-cont h2, .event-cont p, .square-70 h2, .square-70 p  {margin: 0; padding: 0}
+
+#timer {padding-left: 0;}
+
+.square-70 {
+	min-width: 65px; 
+	height: auto;
+	background-color: #333333;
+	margin-right: 7px;
+	display: inline-block;
+}
+.square-70 div {width: 100%;height: auto;}
+
+.bg-event {background-image: url("../img/bg/bg-white-for-event.jpg");width: 100%;}
+
+.event-center {margin: auto 0;}
+
+@media (max-width:576px) {
+	.style-comin {display: none;}
+}
+/*EVENT*/
+
+/*OFFER*/
+.bg-offer {background-image: url("../img/bg/offer-bg.jpg")}
+
+.h2-offer {margin: auto 0;}
+
+
+@media (max-width: 576px) {
+	.btn-offer {text-align: center;}
+}
+
+/*OFFER*/
+
+/*ABOUT*/
+.img-1 {
+	z-index: -1;
+	width: auto;
+	height: 100%;
+	position: absolute;
+	right: 0;
+}
+.img-2 {
+	z-index: 1;
+	width: 80%;
+	height: auto;
+	position: absolute;
+	top: 15%;
+	left: 0
+}
+
+@media (max-width: 576px) {
+	.position-relative {position: static} 
+	.img-1 {display: none} 
+	.img-2 {width: 100%}
+}
+/*ABOUT*/
+
+/*SHOWCASE*/
+
+.showcase-num {font-family: notosan-bi;font-size: 72px}
+.showcase-icon {max-width: 30%}
+
+/*SHOWCASE*/
+
+/*HR*/
+
+.hr {
+	text-align: center;
+}
+
+/*
+.name {
+	font-family: notosan-bi;
+	font-size: 12px;
+	color: white;
+	width: 30px;
+	height: 50%;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+*/
+.name {
+	color: white;
+	background-color: black;
+}
+
+.name p {margin: 0 auto;}
+
+.bg-hover {
+	width: 100%;
+	height: 100%;
+	background-color: #FA6600;
+	position: absolute;
+	z-index: 10;
+	opacity: 0%;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.hr:hover .bg-hover {
+	opacity: 30%;
+	box-shadow: 5px 5px 10px black;
+}
+.bg-hover img {
+	width: 100%;
+}
+.w-custom {width: 39%}
+
+/*HR*/
+
+.form-control {
+	border: 1px #FA6600 solid;
+	border-left: 10px #FA6600 solid;
+	border-radius: 10px
+}
+
+.bg-dangky {
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/banner5.jpg");
+	background-size: cover;
+	background-repeat: no-repeat
+}
+.bg-form-dangky {
+	background-image: url("../img/banner5.jpg");
+	background-color: rgba(0,0,0,0.5);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+		/*FOOTER*/
+.bg-footer {
+	background-image: url("../img/bg/footer-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.text-foot-1 h6, .text-foot-1 h3 {color: #FA6600;text-transform: uppercase;}
+
+.text-foot-1 h3 {color: white;fontweight: 100;text-transform: none;}
+
+.text-foot-1 > p {padding: 0;margin: 0;}
+.text-foot-1 .font-noto-b-16 {
+	color: #FA6600;
+	text-transform: uppercase;
+}
+
+.line {border-bottom: 2px white solid;}
+
+.text-white i {transform: scale(500px)}
+
+.fa-icon-footer {font-size: 30px;}
+.fa-icon-footer, .fa-icon-detail, .media {list-style: none;}
+.fa-icon-detail {padding-top: 15px;}
+
+.media {width: 100%}
+.media > li {float: left;font-size: 30px;margin: 0 20px;}
+@media only screen and (min-width:576px) {
+	.media > li {font-size: 40px}
+}
+		/*FOOTER*/
+
+		/*DROPDOWN MENU*/
+@media (min-width: 992px){
+	.dropdown-menu .dropdown-toggle:after {
+		border-top: .3em solid transparent;
+	    border-right: 0;
+	    border-bottom: .3em solid transparent;
+	    border-left: .3em solid;
+	}
+	.dropdown-menu li
+	.dropdown-menu .dropdown-menu{
+		margin-left:0; margin-right: 0;
+	}
+	.dropdown-menu li{
+		position: relative;
+	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; 
+		top:-10px;
+	}
+	#sub-cru {top: -50px;}
+	#sub-tour {top: -90px;}
+	
+	.nav-item .submenu-left{right:100%;left:auto;}
+	
+	.dropdown-menu > li:hover { background-color: #fa6600}
+	.dropdown-menu > li:hover > .submenu {
+		display: block;
+		border: none;
+	}
+}

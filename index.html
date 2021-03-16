@@ -1,0 +1,768 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Master.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>Home</title>
+		<!-- InstanceEndEditable -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/CSS_global.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+    	<!-- InstanceBeginEditable name="head" -->
+		<link rel="stylesheet" href="css/abt.css">
+    <!-- InstanceEndEditable -->
+	</head>
+
+	<body>
+<!--SIGNIN OVERLAY-->
+		
+	<!-- offcanvas panel right -->
+		<aside class="offcanvas offcanvas-right" id="my_offcanvas2">
+		  	<header class="p-4 bg-white border-bottom">
+				<div class="w-100 text-center">
+					<a href="#"><img class="w-50 logo-overlay" src="img/logo-top.png" alt=""></a>
+					<button class="btn btn-outline-dark btn-close"> &times </button>
+				</div>
+		  	</header>
+			
+		  	<div class="mb-5 mt-4">
+				<h2 class="d-inline-block font-noto-bi-24 text-dark">Đăng nhập</h2>
+				<img class="line-decor" src="img/icon/Line%20decor.png" alt="">
+			</div>
+
+			<div class="mb-3">
+				<form action="#">
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Tên đăng nhập">
+					</div>
+				</form>
+				<form action="#">
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Mật khẩu" id="myInput">
+						<input type="checkbox" onclick="myFunction()">Show Password
+					</div>
+				</form>
+				
+				<div class="text-center">
+					<a href="#" class="">tạo tài khoản</a>
+				</div>
+				
+			</div>
+
+
+			<div class="w-100 text-center">
+				<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+					<span>đăng nhập<i class="fa fa-arrow-right"></i></span>
+				</a>
+			</div>
+		</aside>
+	<!-- offcanvas panel right .end -->
+<!--SIGNIN OVERLAY END-->
+<!--CART-->		
+		<div class="container" id="shoppicart">
+			<div class="row">
+				<div class="offset-9"></div>
+				<div class="col-xl-3 col-md-3 col-sm-6 col-12">
+					<div class=" float-right">
+						<div class="float-left cart"><a href="#"><i class="fa fa-search"></i></a></div>
+						<div class="float-left cart" data-trigger="#my_offcanvas2"><a href="#"><i class="fa fa-user"></i></a></div>
+						<div class="float-left cart highli">
+							<a href="#">
+								<i class="fa fa-shopping-cart"><sup>0</sup></i>			
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--CART END-->
+<!--MENU-->
+		<div class="container-fluid bg-light">
+			<div class="container" id="menu">
+				<nav class="navbar navbar-expand-md navbar-light">
+					<div class="size-img">
+						<a href="#" class="navbar-brand"><img class="w-100" src="img/logo-top.png" alt=""></a>
+					</div>
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+    					<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="main_nav">
+						<ul class="navbar-nav text-uppercase ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="index.html">trang chủ</a></li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">xe motor</a>
+								<ul class="dropdown-menu override-dropdown" id="">
+									<li>
+										<a href="product-street.html" class="dropdown-item text-center">street</a>
+										<ul class="submenu dropdown-menu" id="editing">
+											<li><a href="forty-eight.html" class="dropdown-item">forty-eight</a></li>
+											<li><a href="forty-eight.html" class="dropdown-item">iron 1200</a></li>
+											<li><a href="forty-eight.html" class="dropdown-item">iron 883</a></li>
+											<li><a href="forty-eight.html" class="dropdown-item">roaster</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="product-street.html" class="dropdown-item level1 text-center">cruiser</a>
+										<ul class="submenu dropdown-menu" id="sub-cru">
+											<li><a href="forty-eight.html" class="dropdown-item">Fat Bob</a></li>
+											<li><a href="forty-eight.html" class="dropdown-item">Fat Boy</a></li>
+											<li><a href="forty-eight.html" class="dropdown-item">Street Bob</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="product-street.html" class="dropdown-item level1 text-center">touring</a>
+										<ul class="submenu dropdown-menu" id="sub-tour">
+											<li><a href="forty-eight.html" class="dropdown-item">Road king</a></li>
+											<li><a href="forty-eight.html" class="dropdown-item">CVO Street Glide</a></li>
+											<li><a href="forty-eight.html" class="dropdown-item">Heritage Classic</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item"><a class="nav-link" href="Part.html">phụ tùng</a></li>
+
+							<li class="nav-item"><a class="nav-link" href="about.html">về chúng tôi</a></li>
+
+							<li class="nav-item"><a class="nav-link" href="magazine.html">tạp chí</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+<!--MENU-->
+<!-- InstanceBeginEditable name="main" -->
+	<main>
+		<div class="container-fluid">
+			<div class="carousel slide" data-ride="carousel" id="banner">
+				<!--INDICATOR-->
+				<ul class="carousel-indicators">
+					<li class="active" data-target="#banner" data-slide-to="0"></li>
+					<li class="" data-target="#banner" data-slide-to="1"></li>
+					<li class="" data-target="#banner" data-slide-to="2"></li>
+					<li class="" data-target="#banner" data-slide-to="3"></li>
+					<li class="" data-target="#banner" data-slide-to="4"></li>
+				</ul>
+				<!--INDICATOR-->
+				
+				<!--NEXT&PREV-->
+				<a href="#banner" class="carousel-control-next" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+				<a href="#banner" class="carousel-control-prev" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<!--NEXT&PREV-->
+				
+				<!--SLIDESHOW-->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./img/banner1.jpg" alt="" class="w-100">
+						<div class="carousel-caption cap1">
+							<div class="square">
+								<div class="bann-cont m-2 text-center">
+									<img src="img/logo-top-white.png" alt="">
+									<header class="font-noto-bi-24 text-uppercase main-color">thu xe cũ đổi ngay <span>Harley-Davidson</span></header>
+									<h3 class="font-noto-bi-24 mb-5">Dành cho tất cả thương hiệu xe motor</h3>
+									
+									<div class="w-100 ">
+										<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+											<span>tìm hiểu thêm<i class="fa fa-arrow-right"></i></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="carousel-item">
+						<img src="./img/banner2.jpg" alt="" class="w-100">
+						<div class="carousel-caption cap1">
+							<div class="square">
+								<div class="bann-cont m-2 text-center">
+									<img src="img/logo-top-white.png" alt="">
+									<h2 class="font-noto-bi-24 text-uppercase main-color">thu xe cũ đổi ngay <span>Harley-Davidson</span></h2>
+									<h3 class="font-noto-bi-24 mb-5">Dành cho tất cả thương hiệu xe motor</h3>
+									
+									<div class="w-100">
+										<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+											<span>tìm hiểu thêm<i class="fa fa-arrow-right"></i></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner3.jpg" alt="" class="w-100">
+						<div class="carousel-caption cap1">
+							<div class="square cap-left">
+								<div class="bann-cont m-2 text-center">
+									<img src="img/logo-top-white.png" alt="">
+									<h2 class="font-noto-bi-24 text-uppercase main-color">thu xe cũ đổi ngay <span>Harley-Davidson</span></h2>
+									<h3 class="font-noto-bi-24 mb-5">Dành cho tất cả thương hiệu xe motor</h3>
+									
+									<div class="w-100">
+										<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+											<span>tìm hiểu thêm<i class="fa fa-arrow-right"></i></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner4.jpg" alt="" class="w-100">
+						<div class="carousel-caption cap1">
+							<div class="square">
+								<div class="bann-cont m-2 text-center">
+									<img src="img/logo-top-white.png" alt="">
+									<h2 class="font-noto-bi-24 text-uppercase main-color">thu xe cũ đổi ngay <span>Harley-Davidson</span></h2>
+									<h3 class="font-noto-bi-24 mb-5">Dành cho tất cả thương hiệu xe motor</h3>
+									
+									<div class="w-100">
+										<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+											<span>tìm hiểu thêm<i class="fa fa-arrow-right"></i></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/banner5.jpg" alt="" class="w-100">
+						<div class="carousel-caption cap1">
+							<div class="square">
+								<div class="bann-cont m-2 text-center">
+									<img src="img/logo-top-white.png" alt="">
+									<h2 class="font-noto-bi-24 text-uppercase main-color">thu xe cũ đổi ngay <span>Harley-Davidson</span></h2>
+									<h3 class="font-noto-bi-24 mb-5">Dành cho tất cả thương hiệu xe motor</h3>
+									
+									<div class="w-100">
+										<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+											<span>tìm hiểu thêm<i class="fa fa-arrow-right"></i></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--SLIDESHOW-->	
+			</div>
+		</div>
+		
+		<div class="container-fluid bg-dongxe">
+			<div class="container" id="dongxe">
+				<div class="row">
+					<div class="col-xl-12 col-md-12 col-sm-12 col-12 mt-5 mb-4">
+						<div class="font-noto-bi-24 text-uppercase text-center">
+							<img class="line-decor" src="img/icon/Line decor.png" alt="" style="transform: scaleX(-1)">
+							<header class="d-inline-block">dòng xe</header>
+							<img class="line-decor" src="img/icon/Line decor.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-12">
+						<!--NAVTAB-->
+						<ul class="nav-tabs nav justify-content-center mb-4 font-noto-b-16">
+							<li class="nav-item active">
+								<a class="nav-link" data-toggle="tab" href="#street">STREET</a>
+								<div class="line"></div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#cruiser">CRUISER</a>
+								<div class="line"></div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#touring">TOURING</a>
+								<div class="line"></div>
+							</li>
+						</ul>
+						<!--NAVTAB-->
+						<!--PANE-->
+						<div class="tab-content">
+							<div class="container tab-pane active" id="street">
+								<div class="w-33 float-left"><img src="img/products/street/forty-eight/2020-forty-eight-motorcycle-k3.jpg" alt="" class="w-100"></div>
+								<div class="w-33 float-left"><img src="img/products/street/forty-eight/2020-forty-eight-motorcycle-k1.jpg" alt="" class="w-100"></div>
+								<div class="w-33 float-left"><img src="img/products/street/forty-eight/2020-forty-eight-motorcycle-k7.jpg" alt="" class="w-100"></div>
+							</div>
+							
+							<div class="container tab-pane fade" id="cruiser">
+								<div class="w-33 float-left"><img src="img/products/street/iron 1200/2020-iron-1200-motorcycle-k5.jpg" alt="" class="w-100"></div>
+								<div class="w-33 float-left"><img src="img/products/street/iron 1200/2020-iron-1200-motorcycle-k4.jpg" alt="" class="w-100"></div>
+								<div class="w-33 float-left"><img src="img/products/street/iron 1200/2020-iron-1200-motorcycle-k3.jpg" alt="" class="w-100"></div>
+							</div>
+							
+							<div class="container tab-pane fade" id="touring">
+								<div class="w-33 float-left"><img src="img/products/street/iron 1200/2020-iron-1200-motorcycle-k5.jpg" alt="" class="w-100"></div>
+								<div class="w-33 float-left"><img src="img/products/street/iron 1200/2020-iron-1200-motorcycle-k4.jpg" alt="" class="w-100"></div>
+								<div class="w-33 float-left"><img src="img/products/street/iron 1200/2020-iron-1200-motorcycle-k3.jpg" alt="" class="w-100"></div>
+							</div>
+						</div>
+						<!--PANE-->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" id="phutung">
+			<div class="row">
+				<div class="col-xl-12 col-md-12 col-sm-12 col-12 mt-5 mb-4">
+					<div class="font-noto-bi-24 text-uppercase text-center text-dark">
+						<img class="line-decor" src="img/icon/Line decor.png" alt="" style="transform: scaleX(-1)">
+						<header class="d-inline-block">phụ tùng <span class="main-color font-noto-bi-16">Mới nhất</span></header>
+						<img class="line-decor" src="img/icon/Line decor.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="scrolling-wrapper">
+					<div class="col-xl-3 col-md-4 col-sm-6 col-6 card-part">
+						<a href="#" class="btn-disable">
+							<div class="">
+								<img src="img/part/part1.jpg" alt="" class="w-100">
+								<div class="phutung-conte">
+									<p>New arrival</p>
+									<h3 class="font-noto-bi-24">Screamin' Eagle Heavy Breather Elite Air Cleaner  Kit <br><span>$549.95</span></h3>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xl-3 col-md-4 col-sm-6 col-6 card-part">
+						<a href="#" class="btn-disable">
+							<div class="">
+								<img src="img/part/part2.jpg" alt="" class="w-100">
+								<div class="phutung-conte">
+									<p>New arrival</p>
+									<h3 class="font-noto-bi-24">Seismic 18 in. Front Wheel <br><span>$624.95 </span></h3>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xl-3 col-md-4 col-sm-6 col-6 card-part">
+						<a href="#" class="btn-disable">
+							<div class="">
+								<img src="img/part/part3.jpg" alt="" class="w-100">
+								<div class="phutung-conte">
+									<p>New arrival</p>
+									<h3 class="font-noto-bi-24">Seismic 21 in. Front Wheel <br><span>$574.95</span></h3>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xl-3 col-md-4 col-sm-6 col-6 card-part">
+						<a href="#" class="btn-disable">
+							<div class="">
+								<img src="img/part/part4.jpg" alt="" class="w-100">
+								<div class="phutung-conte">
+									<p>New arrival</p>
+									<h3 class="font-noto-bi-24">Seismic Front Brake Rotor <br><span>$199.95</span></h3>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xl-3 col-md-4 col-sm-6 col-6 card-part">
+						<a href="#" class="btn-disable">
+							<div class="">
+								<img src="img/part/part5.jpg" alt="" class="w-100">
+								<div class="phutung-conte">
+									<p>New arrival</p>
+									<h3 class="font-noto-bi-24">Harley-Davidson by Rizoma LiveWire Charge Door <br><span>$199.95</span></h3>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xl-3 col-md-4 col-sm-6 col-6 card-part">
+						<a href="#" class="btn-disable">
+							<div class="">
+								<img src="img/part/part6.jpg" alt="" class="w-100">
+								<div class="phutung-conte">
+									<p>New arrival</p>
+									<h3 class="font-noto-bi-24">Screamin' Eagle Heavy Breather Elite Air Cleaner Kit <br><span>$549.95</span></h3>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xl-3 col-md-4 col-sm-6 col-6 card-part">
+						<a href="#" class="btn-disable">
+							<div class="">
+								<img src="img/part/part7.jpg" alt="" class="w-100">
+								<div class="phutung-conte">
+									<p>New arrival</p>
+									<h3 class="font-noto-bi-24">SHarley-Davidson by Rizoma Mirrors <br><span>$279.95</span></h3>
+								</div>
+							</div>
+						</a>
+					</div>
+					
+					<div class="col-xl-3 col-md-4 col-sm-6 col-6 card-part">
+						<a href="#" class="btn-disable">
+							<div class="">
+								<img src="img/part/part8.jpg" alt="" class="w-100">
+								<div class="phutung-conte">
+									<p>New arrival</p>
+									<h3 class="font-noto-bi-24">Turbine 18 in. Rear Wheel <br><span>$699.95</span></h3>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container mt-5 mb-5">
+			<div class="row">
+				<div class="col-xl-6 col-md-6 col-sm-12 col-12 magazine">
+					<header class="font-noto-bi-24 text-dark d-inline-block">TẠP CHÍ NGƯỜI SAY MÊ &reg;</header>
+					<img class="line-decor" src="img/icon/Line decor.png" alt="">
+					<p>Chào mừng bạn đến với  tạp chí Người Say Mê: mang phong cách cổ điển của Harley-Davidson kể từ năm 1916.</p>
+					<div class="w-100 ">
+						<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+							<span>tìm hiểu thêm<i class="fa fa-arrow-right"></i></span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-xl-6 col-md-6 col-sm-12 col-12 colli-img">
+					<img src="img/magazine1.jpg" alt="" class="w-100">
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid bg-black position-relative overflow-hidden">
+			<div class="style-comin"><h1>COMING</h1></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-md-6 col-sm-12 col-12 text-center event-center">
+						<div class="event-cont mb-5">
+							<header class="font-noto-bi-36">SỰ KIỆN SẮP TỚI</header>
+							<p class="font-noto-bi-16 main-color">H.O.G VIETNAM</p>
+						</div>
+						
+						<ul id="timer">
+							<li class="square-70">
+								<div>
+									<span class="font-noto-b-24 days">00</span>
+									<p class="font-noto-bi-16" style="color: #BDBDBD">Ngày</p>
+								</div>
+							</li>
+							<li class="square-70">
+								<div>
+									<span class="font-noto-b-24 hours">00</span>
+									<p class="font-noto-bi-16 " style="color: #BDBDBD">Giờ</p>
+								</div>
+							</li>
+							<li class="square-70">
+								<div>
+									<span class="font-noto-b-24 minutes">00</span>
+									<p class="font-noto-bi-16" style="color: #BDBDBD">Phút</p>
+								</div>
+							</li>
+							<li class="square-70">
+								<div>
+									<span class="font-noto-b-24 seconds">00</span>
+									<p class="font-noto-bi-16" style="color: #BDBDBD">Giây</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="col-xl-6 col-md-6 col-sm-12 col-12 bg-event p-5">
+						<div>
+							<img src="img/magazine/76a12951deddd7f54f40b2652d0ee112_047fd75f0c767d92.jpg" alt="" class="w-100">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid bg-offer pt-4 pb-4 mt-3 mb-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-9 col-md-9 col-sm-12 col-12 h2-offer">
+						<header class="font-noto-bi-24">Sẵn sàng nhập cuộc? Xem ưu đãi tại đây.</header>
+					</div>
+					
+					<div class="col-xl-3 col-md-3 col-sm-12 col-12">
+						<div class="w-100 btn-offer">
+							<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+								<span>xem ưu đãi<i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 col-md-6 col-sm-12 col-12">
+					<header class="font-noto-bi-24 text-dark">Giá trị cốt lõi trong từng quá trình tạo ra  sản phẩm. <span><img class="line-decor" src="img/icon/Line decor.png" alt=""></span></header>
+					
+					<p class="mt-5 mb-5">Những phiên bản độ mà chúng ta có cơ hội trải nghiệm ngày hôm nay bắt nguồn từ Thế chiến thứ hai. Lúc bấy giờ, Harley-Davidson đã cải tiến hàng loạt mẫu mô-tô để đáp ứng nhu cầu của lực lượng quân đội - và những mẫu mô tô này đã được yêu thích bởi rất nhiều chiến binh. Sau Chiến tranh khi nền kinh tế bắt đầu tái thiết mô-tô ngày càng trở nên phổ biến những người lái xe bắt đầu chứng tỏ bản thân qua chiếc xe mình sở hữu để khẳng định sự khác biệt so với đám đông.</p>
+					
+					<div class="w-100 mb-5">
+						<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+							<span>xem ưu đãi<i class="fa fa-arrow-right"></i></span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-xl-6 col-md-6 col-sm-12 col-12 img-abt">
+					<img class="img-1-1" src="img/random1.jpg" alt="">
+
+					<div class="position-relative"><img class="img-2-2 w-100" src="img/factory3.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid bg-black">
+			<div class="container pt-5 pb-5">
+				<div class="row">
+					<div class="col-xl-3 col-md-3 col-sm-6 col-6 text-center">
+						<div class="showcase">
+							<img class="img-fluid showcase-icon" src="img/icon/SVG-icon/mechanic-icon.png" alt="">
+							<div>
+								<h1 class="font-noto-bi-42 main-color">759</h1>
+								<header class="font-noto-bi-24 text-uppercase">Sửa chữa, thay thế</header>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-3 col-sm-6 col-6 text-center">
+						<div class="showcase">
+							<img class="img-fluid showcase-icon" src="img/icon/SVG-icon/Group 1.png" alt="">
+							<div>
+								<h1 class="font-noto-bi-42 main-color">1,518</h1>
+								<header class="font-noto-bi-24 text-uppercase">Thành Viên</header>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-3 col-sm-6 col-6 text-center">
+						<div class="showcase">
+							<img class="img-fluid showcase-icon" src="img/icon/SVG-icon/headphones 1.png" alt="">
+							<div>
+								<h1 class="font-noto-bi-42 main-color">147</h1>
+								<header class="font-noto-bi-24 text-uppercase">Câu Lạc Bộ</header>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-3 col-md-3 col-sm-6 col-6 text-center">
+						<div class="showcase">
+							<img class="img-fluid showcase-icon" src="img/icon/SVG-icon/speedometer 1.png" alt="">
+							<div>
+								<h1 class="font-noto-bi-42 main-color">57,324</h1>
+								<header class="font-noto-bi-24 text-uppercase">Tổng số kilometer</header>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 col-md-12 col-sm-12 col-12 text-center">
+					<div class="font-noto-bi-24 text-uppercase text-center text-dark">
+						<img class="line-decor" src="img/icon/Line decor.png" alt="" style="transform: scaleX(-1)">
+						<header class="d-inline-block">đội ngũ</header>
+						<img class="line-decor" src="img/icon/Line decor.png" alt="">
+					</div>
+					
+					<p >Vào năm 2013, ALNA Việt Nam đã chính thức được bổ nhiệm làm đại diện cho Công ty Harley-Davidson® về xe mô tô, phụ tùng và phụ kiện, MotorClothes ™ thông qua đại lý được ủy quyền,  Harley-Davidson of Saigon</p>
+				</div>
+
+				<div class="col-xl-3 col-md-3 col-sm-6 col-6">
+					<div class="hr">
+						<img class="w-100" src="img/HR/Matthew Levatich.png" alt="">
+						<p class="name text-center font-noto-bi-16">Matthew Levatich</p>
+						<p class="text-center text-dark font-noto-bi-16">Giám đốc điều hành</p>
+
+						<div class="bg-hover"><a class="w-custom" href="#"><img src="img/icon/SVG-icon/search 1.png" alt=""></a></div>
+					</div>
+				</div>
+				
+				<div class="col-xl-3 col-md-3 col-sm-6 col-6">
+					<div class="hr">
+						<img class="w-100" src="img/HR/Jeff Richlen.png" alt="">
+						<p class="name text-center font-noto-bi-16">Jeff Richlen</p>
+						<p class="text-center text-dark font-noto-bi-16">Kỹ sư trưởng</p>
+
+						<div class="bg-hover"><a class="w-custom" href="#"><img src="img/icon/SVG-icon/search 1.png" alt=""></a></div>
+					</div>
+				</div>
+				
+				<div class="col-xl-3 col-md-3 col-sm-6 col-6">
+					<div class="hr">
+						<img class="w-100" src="img/HR/Matt Damon.png" alt="">
+						<p class="name text-center font-noto-bi-16">Matt Damon</p>
+						<p class="text-center text-dark font-noto-bi-16">Quảng cáo & Đối ngoại</p>
+
+						<div class="bg-hover"><a class="w-custom" href="#"><img src="img/icon/SVG-icon/search 1.png" alt=""></a></div>
+					</div>
+				</div>
+				
+				<div class="col-xl-3 col-md-3 col-sm-6 col-6">
+					<div class="hr">
+						<img class="w-100" src="img/HR/Martin Ford.png" alt="">
+						<p class="name text-center font-noto-bi-16">Martin Ford</p>
+						<p class="text-center text-dark font-noto-bi-16">Trưởng nhân sự</p>
+
+						<div class="bg-hover"><a class="w-custom" href="#"><img src="img/icon/SVG-icon/search 1.png" alt=""></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid bg-form-dangky">
+			<div class="container pb-5">
+				<div class="row">
+					<div class="offset-4"></div>
+					<div class="col-xl-5 col-md-5 col-sm-12 col-12">
+						<div class="mb-5 mt-5">
+							<header class="font-noto-bi-24 d-inline-block">Đăng ký nhận bản tin</header>
+							<img class="line-decor" src="img/icon/Line decor.png" alt="">
+						</div>
+
+						<div class="mb-5">
+							<form action="#">
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Họ & Tên">
+							</div>
+						</form>
+						<form action="#">
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Email">
+							</div>
+						</form>
+						<form action="#">
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Điện thoại">
+							</div>
+						</form>
+						</div>
+
+
+						<div class="w-100 text-center">
+							<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+								<span>tìm hiểu thêm<i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+<!-- InstanceEndEditable -->
+
+		
+		
+		
+<!--FOOTER-->
+	<footer>
+		<div class="container-fluid bg-footer mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mt-5">
+						<img src="img/logo-bottom.png" alt="" class="img-fluid">
+					</div>
+					<div class="col-xl-4 col-lg-3 col-md-3 col-sm-12 col-12 text-foot-1 mt-5">
+						<p class="font-noto-b-16">newsletter sign-up</p>
+						<p class="font-noto-b-36">Stay in the know</p>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-4 col-sm-12 col-12 mt-5">
+						<div class="w-100">
+							<a href="#" class="bg-btn font-noto-b-16 btn-disable">
+								<span>đăng ký nhận email <i class="fa fa-arrow-right"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-12 line"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-12 mt-3 text-white">
+						<ul class="list-unstyled">
+							<li class="mt-2"><h2 class="font-noto-b-24 main-color text-capitalize">since 1916</h2></li>
+							<li class="mt-2"><a class="text-white font-noto-r-16" href="#"><span><i class="fa fa-angle-right mr-2"></i></span>về chúng tôi</a></li>
+
+							<li class="mt-2"><a class="text-white font-noto-r-16" href="#"><span><i class="fa fa-angle-right mr-2"></i></span>Dòng xe</a></li>
+
+							<li class="mt-2"><a class="text-white font-noto-r-16" href="#"><span><i class="fa fa-angle-right mr-2"></i></span>Tạp chí</a></li>
+
+							<li class="mt-2"><a class="text-white font-noto-r-16" href="#"><span><i class="fa fa-angle-right mr-2"></i></span>Dịch vụ</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mt-3">
+						<h2 class="font-noto-b-16 text-white text-uppercase">có câu hỏi? <span class="main-color">Liên hệ ngay.</span></h2>
+						
+						<ul class="fa-icon-footer float-left">
+							<li><i class="fa fa-envelope text-white text-md-center"></i></li>
+							<li><i class="fa fa-phone text-white text-md-center"></i></li>
+							<li><i class="fa fa-map-marker text-white text-md-center"></i></li>
+						</ul>
+						
+						<ul class="fa-icon-detail text-white ml-5">
+							<li><p>customer@harley-davidson.com</p></li>
+							<li><p>800-199-1234-4565</p></li>
+							<li><p>3700 W. Juneau Avenue <br>Milwaukee, WI 53208</p></li>
+						</ul>
+				
+						<ul class="media d-inline-block">
+							<li><a href="#"><i class="fa fa-facebook" style="color: #3b5998;"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" style="color: #00acee;"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest-square" style="color: #c8232c;"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube-play" style="color: red;"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xl-12 line"></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-12 text-center font-noto-b-16 text-white-50 my-3">
+						Bản quyền thuộc về Harley Davidson bởi công ty Harley Davidson.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!--FOOTER-->
+	
+		<script src="js/jquery-3.5.1.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/script.js"></script>
+		
+		<!-- InstanceBeginEditable name="script" -->
+		<script type="text/javascript">
+			$('#timer').countdown({
+					date:'12/24/2021 23:59:59'
+				},function () {
+					alert('Time for a ride!');
+				});
+		</script>
+		<!-- InstanceEndEditable -->
+		
+	</body>
+<!-- InstanceEnd --></html>
